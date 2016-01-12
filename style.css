@@ -1,0 +1,184 @@
+h1, h2, h3, h4 { color: #f0563a; font-family: 'Amaranth', sans-serif;}
+body { 
+	color: #555; 
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	background: #3a414c no-repeat center center fixed; 
+	-webkit-background-size: cover;
+  background-size: cover;	
+}
+video{
+	position:fixed;
+	left:0;top:0;
+	min-width:100%;
+	min-height:100%;
+	width:auto;
+	height:auto;
+	z-index:-100;
+	visibility: visible;
+}
+
+header {
+	background: rgba(58, 65, 76, .6);
+}
+
+
+header #nav > li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+header .cntr {
+	text-align: center;
+}
+
+ul#nav {
+	margin-top:0;
+	margin-right: 20px;
+	text-align: right;
+}
+
+#logo{
+	width: 60%; height: 400px;
+	text-align: center;
+	margin: auto;
+	background: url(images/Cimpress_Idenitity_Final.svg) no-repeat center;	
+	background-size: 100%;
+}
+
+#navigation ul.menu > li.menuItem > a {
+    font-family: Open Sans,Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#navigation ul.menu > li.menuItem > a:hover {
+    color: #f0563a;
+    background: none;
+}
+
+.strapline{
+	padding: 20px 0;
+	color: #fff;	
+	font-size: 2.5em;
+	font-family: 'Amaranth', sans-serif;
+}
+.x_bg{ background: repeating-linear-gradient(60deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5) 1px, rgba(58, 65, 76, .9) 1px, rgba(58, 65, 76, .9) 2px);}
+
+.cntr{
+	margin: 0 auto;
+	width: 95%;
+	max-width: 960px;
+	line-height: 1.6em;	
+}
+.lines{
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;	
+	padding-bottom: 10px;
+}
+
+.menuToggle {
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    float: right;
+    z-index: 12;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: auto;
+}
+
+.menuToggle:after {
+    content: '\f0c9';
+    font-family: fontAwesome;
+    font-size: 3em;
+    line-height: 1.5em;
+}
+
+.menuToggle, .main-navigation.toggled ul {
+    display: block;
+}
+
+.white{
+	background: #fff;
+	padding: 40px 0;	
+}
+#map {
+	padding:20px 0;
+}
+
+#page a{
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	background: #f0563a;
+	padding:.5rem;
+	transition:.3s background;
+}
+a:hover{
+	background:#3a414c;
+}
+
+hr {
+	height:1px; 
+	background-color:#ddd; 
+	border:none;	
+}
+.third{
+	float: left;
+	width: 30%;
+	padding: 0 1.5%;	
+}
+.clearfix{ clear: both; }
+.spacer { min-height: 240px; }
+.dark_bg { background:rgba(0,0,0,0.5); }
+.smll { font-size: 0.8em; 
+	color: rgba(255,255,255,0.5);
+}
+.respond {
+	max-width: 100%;	
+}
+.small_spacer { min-height: 120px; }
+.thin_bg{ 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(55,55,55,0.9)), color-stop(80%,rgba(55,55,55,0)),color-stop(100%,rgba(55,55,55,0.3))), url(images/thin_stripe.png);
+}
+.about-img{
+	max-width: 360px;
+	display: block;
+	float: right;
+}
+.dark2_bg {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(45,45,45,0)), color-stop(100%,rgba(45,45,45,0.8))), url(images/dot.png);;
+}
+.dark{
+	background: #3a414c;
+	padding: 40px 0;
+}
+.dark p, .dark h2{
+	color: #999;	
+}
+@media screen and (max-width: 768px) {
+	video{ visibility:hidden;}
+	header { background: rgba(58, 65, 76, 1);}
+	#logo{width: 200px; height: 200px; margin: 30px auto;}
+	#vCent{width: 200px; height: 200px;}
+	#vCent h1{font-size:3em;}
+	.strapline{font-size:2em;}
+	#logo{
+		width: 100%; height: 400px;
+		text-align: center;
+		margin: auto;
+		background: url(images/Cimpress_Logo_Final.svg) no-repeat center;	
+		background-size: 100%;}
+}
+
+@media screen and (min-width: 769px){
+.menuToggle {
+    display: none;
+}
+
